@@ -1,0 +1,95 @@
+Q 4 find min and max element in one pass
+
+class Solution {
+public:
+    vector<int> min_max(vector<int>& arr, int n) {
+              int min_no=arr[0];
+              int max_no=arr[0];
+              vector<int>ans;
+             if(n==0)
+                  {
+                  ans.push_back(-1);
+                  }
+             else
+                 {
+                  for(int i=1;i<n;i++)
+                     {
+                     if(arr[i]<min_no)
+                       {
+                       min_no=arr[i];
+                       }
+                     else if(arr[i]>max_no)
+                       {
+                       max_no=arr[i];
+                       }
+                     
+                     }
+                     ans.push_back(min_no);
+                     ans.push_back(max_no);
+                 }
+                 return ans;
+             
+        
+        }
+        
+    
+};
+
+
+Q3 Find Minimum element
+
+int minimumelement(int arr[],int n)
+                        {
+                                int minno=INT_MAX;
+                                if(n==0)
+                                   {
+                                  return -1;
+                                  }
+                                 else
+                                  {
+                                    for(int i=0;i<n;i++)
+                                    {
+                                     minno=min(minno,arr[i])
+                                    }
+                                  }
+                                  
+                                  return<<minno;
+                          }
+
+
+
+Q2 Return maximum element of array
+  int maxelement(int arr[],int n)
+                        {
+                                int maxino=INT_MIN;
+                                if(n==0)
+                                   {
+                                  return -1;
+                                  }
+                                 else
+                                  {
+                                    for(int i=0;i<n;i++)
+                                    {
+                                     maxino=max(maxino,arr[i])
+                                    }
+                                  }
+                                  
+                                  return<<maxino;
+                          }
+                                  
+                                
+                                
+
+
+Q1 Print all element of array
+void printarray(long long int arr[],long long int n)
+                {
+                if(n==0)
+                return;
+                for(long long int i=0;i<n;i++)
+                   {
+                   cout<<arr[i]<<" ";
+                   }
+                }
+                
+                
